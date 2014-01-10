@@ -1,20 +1,20 @@
 @import "settings";
-@import "foundation";
+//@import "foundation";
 
 // Or selectively include components
-// @import
+ @import
 //   "foundation/components/accordion",
 //   "foundation/components/alert-boxes",
 //   "foundation/components/block-grid",
 //   "foundation/components/breadcrumbs",
 //   "foundation/components/button-groups",
-//   "foundation/components/buttons",
+   "foundation/components/buttons",
 //   "foundation/components/clearing",
 //   "foundation/components/dropdown",
 //   "foundation/components/dropdown-buttons",
 //   "foundation/components/flex-video",
-//   "foundation/components/forms",
-//   "foundation/components/grid",
+   "foundation/components/forms",
+   "foundation/components/grid",
 //   "foundation/components/inline-lists",
 //   "foundation/components/joyride",
 //   "foundation/components/keystrokes",
@@ -34,7 +34,110 @@
 //   "foundation/components/tabs",
 //   "foundation/components/thumbs",
 //   "foundation/components/tooltips",
-//   "foundation/components/top-bar",
-//   "foundation/components/type",
+   "foundation/components/top-bar",
+   "foundation/components/type"
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
+;
+
+// colours!!
+$blue: #0A7B83;
+$green: #2AA876;
+$yellow: #FFD265;
+$orange: #F19C65;
+$red: #CE4D45;
+
+html {
+       overflow-y: scroll;
+}
+
+.header {
+	background-color: $red;
+	padding: 1em;
+	
+	text-align:center;
+
+
+	@media #{$large-up} { 
+		padding: 4em 0 4em;
+	}
+
+	h1, h2 {
+		color: white;
+		font-family: 'PT Sans Caption', Helvetica, Arial, sans-serif;
+		font-weight: 700;
+	}
+	h1 {
+		font-size: 5em;
+	}
+	h2 {
+		margin-top: -0.5em;
+	}
+}
+
+.button {
+	background-color: $blue;
+
+	&:hover {
+		background-color: darken($blue,10%);
+	}
+}
+
+.filters {
+	background-color: $orange;
+	padding: 0.5em 0;
+
+	select, label {
+		margin-bottom: 0;
+	}
+
+	label {
+		font-weight: 700;
+		font-size: 1.2em;
+		color: black;
+	}
+}
+
+.content {
+	margin-top: 2em;
+	@media #{$large-up} { 
+		margin-top: 8em;
+	}
+}
+
+.conferences {
+	list-style: none;
+	
+	font-family: 'Libre Baskerville',Georgia, serif;
+	text-align: center;
+
+	h3 {
+		font-family: 'Libre Baskerville',Georgia, serif;
+		font-size: 2em;
+		font-weight: 700;
+		font-size: 3em;
+
+	}
+
+	li {
+		margin-bottom: 2em;
+		padding-bottom: 2em;
+		border-bottom: thin solid #666;
+	}
+
+	.description {
+		margin-top: 1em;
+	}
+}
+
+.content-info {
+	background-color: $green;
+	color: white;
+	font-family: 'Libre Baskerville',Georgia, serif;
+	padding: 4em 0;
+
+	.copy {
+		margin-top: 3em;
+		text-align: center;
+	}
+}

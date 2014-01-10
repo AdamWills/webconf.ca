@@ -2,162 +2,115 @@
 <html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation</title>
+    <title>WebConf.ca - Web Development Conferences in Canada</title>
     <link rel="stylesheet" href="css/app.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|PT+Sans+Caption:400,700' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <div class="row">
-      <div class="large-12 columns">
-        <h1>Welcome to Foundation</h1>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="large-12 columns">
-        <div class="panel">
-          <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-          <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-          <p>Once you've exhausted the fun in this document, you should check out:</p>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-          <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-        </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://twitter.com/foundationzurb">@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-            </div>
-          </div>
+    <div class="header">
+      <div class="row" >
+        <div class="large-12 columns">
+          <h1>Welcome to WebConf</h1>
+          <h2>A listing of web conferences in Canada</h2>
         </div>
       </div>
     </div>
-
-    <div class="row">
-      <div class="large-8 medium-8 columns">
-        <h5>Here&rsquo;s your basic grid:</h5>
-        <!-- Grid Example -->
-
-        <div class="row">
-          <div class="large-12 columns">
-            <div class="callout panel">
-              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-            </div>
-          </div>
+    <div class="filters">
+      <div class="row">
+        <div class="small-2 columns">
+          <label for="provinceFilter" class="right inline">Filter by:</label> 
         </div>
-        <div class="row">
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
+        <div class="small-10 columns">
+          <select id="provinceFilter"><option value="0">Province</option></select></div>
         </div>
-        <div class="row">
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-        </div>
-
-        <hr />
-
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-        <form>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-12.columns" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <div class="row collapse">
-                <label>Input Label</label>
-                <div class="small-9 columns">
-                  <input type="text" placeholder="small-9.columns" />
-                </div>
-                <div class="small-3 columns">
-                  <span class="postfix">.com</span>
-                </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="row">
+        <div class="large-12 columns">
+          <ul class="conferences">
+            <li data-province="ON">
+              <h3>jQueryTO</h3>
+              
+              <div class="date">
+                March 2 - 3, 2013
               </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Select Box</label>
-              <select>
-                <option value="husker">Husker</option>
-                <option value="starbuck">Starbuck</option>
-                <option value="hotdog">Hot Dog</option>
-                <option value="apollo">Apollo</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-6 medium-6 columns">
-              <label>Choose Your Favorite</label>
-              <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-            </div>
-            <div class="large-6 medium-6 columns">
-              <label>Check these out</label>
-              <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-              <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Textarea Label</label>
-              <textarea placeholder="small-12.columns"></textarea>
-            </div>
-          </div>
-        </form>
-      </div>
 
-      <div class="large-4 medium-4 columns">
-        <h5>Try one of these buttons:</h5>
-        <p><a href="#" class="small button">Simple Button</a><br/>
-        <a href="#" class="small radius button">Radius Button</a><br/>
-        <a href="#" class="small round button">Round Button</a><br/>
-        <a href="#" class="medium success button">Success Btn</a><br/>
-        <a href="#" class="medium alert button">Alert Btn</a><br/>
-        <a href="#" class="medium secondary button">Secondary Btn</a></p>
-        <div class="panel">
-          <h5>So many components, girl!</h5>
-          <p>A whole kitchen sink of goodies comes with Foundation. Checkout the docs to see them all, along with details on making them your own.</p>
-          <a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>
+              <div class="location">
+                Toronto, ON
+              </div>
+
+              <div class="description">
+                <p>The 2013 jQueryTO conference will feature a 2 day schedule with over 30 speakers. Local and foriegn talent has been amassed to provide insight into the future of development, design, user experience and mobile using JavaScript, HTML and CSS.</p>
+              </div>
+
+              <div class="links">
+                <a href="https://twitter.com" class="button">Twitter</a>
+                <a href="http://jqueryto.com/" class="button">Website</a>
+              </div>
+            </li>
+
+            <li data-province="SK">
+              <h3>MoSo</h3>
+              <div class="date">June 11 - 14, 2014</div>
+              <div class="location">Saskatoon, SK</div>
+              <div class="description">
+                <p>MoSo is bringing together the biggest line up of speakers ever. Expect over 30 international thought leaders in the areas of web, marketing, entrepreneurship, startups, music, mobile, social media and more. Plus, hob-nob with some of Canada's biggest thinkers and creatives.</p>
+              </div>
+              
+              <div class="links">
+                <a href="https://twitter.com/mosoconf" class="button">Twitter</a>
+                <a href="http://mosoconf.com/" class="button">Website</a>
+              </div>
+
+            </li>
+
+            <li data-province="ON">
+              <h3>DrupalCamp Toronto</h3>
+              <div class="date">July 13 - 14, 2013</div>
+              <div class="location">Toronto, ON</div>
+              <div class="description">
+                <p>DrupalCamp Toronto is an annual conference, organized by the non-profit Toronto Drupal Users Group, focused on discussions and training about the Drupal content management system. The conference is hosted by the community, for the community.</p>
+              </div>
+              
+              <div class="links">
+                <a href="https://twitter.com/drupalcampto" class="button">Twitter</a>
+                <a href="http://2013.drupalcamptoronto.org/" class="button">Website</a>
+              </div>
+
+            </li>
+          </ul>
         </div>
       </div>
     </div>
+
+    <footer class="content-info">
+    <div class="row">
+      <div class="large-4 columns">Left column</div>
+      <div class="large-8 columns">Right columns</div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns copy">
+        &copy;2014 Adam Wills | Contribute to this on GitHub
+      </div>
+    </div>
+    </footer>
 
     <script src="bower_components/jquery/jquery.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="js/app.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
   </body>
 </html>
