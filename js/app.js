@@ -6,6 +6,7 @@ $(document).ready(function() {
 	    var province = $(this).data("province");
 	    if ($.inArray(province,provinces) < 0) provinces.push(province);
 	});
+	provinces.sort();
 
 	$.each(provinces, function(key, value) {
 		$('#provinceFilter').append('<option value="' + value + '">' + value + '</option>');	
