@@ -1,7 +1,6 @@
 $(document).foundation();
 
 $(document).ready(function() {
-	console.log("fireing");
 	var provinces = [];
 	$(".conferences li").each(function() {
 	    var province = $(this).data("province");
