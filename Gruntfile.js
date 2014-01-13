@@ -28,18 +28,36 @@ module.exports = function(grunt) {
         } 
       },
 
+      js: {
+        files: 'js/app.js',
+        tasks: ['uglify'],
+      },
+
       html: {
         files: 'index.html',
         options: {
           livereload: true
         }
       }
+    },
+
+    uglify: {
+      dist: {
+        files: {
+          'js/scripts.min.js': [
+            'bower_components/foundation/js/foundation.min.js',
+            'js/app.js',
+          ]
+        }
+      }
     }
+
   });
 
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
 
-  grunt.registerTask('build', ['sass']);
+  grunt.registerTask('build', ['sass', 'uglify'] );
   grunt.registerTask('default', ['build','watch']);
 }
