@@ -24,9 +24,15 @@ module.exports = function(grunt) {
         tasks: ['sass'],
         
         options: {
-          livereload: true,
+          livereload: true
         } 
-    
+      },
+
+      html: {
+        files: 'index.html',
+        options: {
+          livereload: true
+        }
       }
     }
   });
