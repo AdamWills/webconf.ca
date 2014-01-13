@@ -69,7 +69,10 @@ html {
 		text-shadow: 3px 3px 10px rgba(0,0,0,0.5);
 	}
 	h1 {
-		font-size: 5em;
+		font-size: 3em;
+		@media #{$large-up} { 
+			font-size: 5em;
+		}
 	}
 	h2 {
 		margin-top: -0.5em;
