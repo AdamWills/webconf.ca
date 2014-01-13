@@ -82,6 +82,10 @@ html {
 	&:hover {
 		background-color: darken($blue,10%);
 	}
+
+	&:focus {
+		background-color: $red;
+	}
 }
 
 .filters {
@@ -96,6 +100,11 @@ html {
 		font-weight: 700;
 		font-size: 1.2em;
 		color: black;
+	}
+
+	select:focus {
+		background-color: $blue;
+		color: white;
 	}
 }
 
@@ -166,6 +175,14 @@ html {
 	a {
 		color: white;
 		text-decoration: underline;
+
+		&:hover {
+			text-decoration: none;
+		}
+
+		&:focus {
+			background-color: $red;
+		}
 
 	}
 }
