@@ -107,7 +107,7 @@ html {
 
 	background-image: url(../img/white_wall_hash.png);
 
-	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dppx) {
 		background-image: url(../img/white_wall_hash_@2X.png);
 	}
 
