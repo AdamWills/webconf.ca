@@ -50,6 +50,14 @@ module.exports = function(grunt) {
           ]
         }
       }
+    },
+
+    copy: {
+      dist: {
+        files: [
+          { expand: true, flatten: true, src: ['bower_components/jquery/jquery.min.js'], dest: 'js/', filter: 'isFile'}
+        ]
+      }
     }
 
   });
@@ -57,7 +65,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
-  grunt.registerTask('build', ['sass', 'uglify'] );
+  grunt.registerTask('build', ['sass', 'uglify', 'copy'] );
   grunt.registerTask('default', ['build','watch']);
 }
