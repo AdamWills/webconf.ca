@@ -1,7 +1,8 @@
 $(document).foundation();
 
 $(document).ready(function() {
-	var provinces = [];
+
+    var provinces = [];
 	$(".conferences li").each(function() {
 	    var province = $(this).data("province");
 	    if ($.inArray(province,provinces) < 0) provinces.push(province);

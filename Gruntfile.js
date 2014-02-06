@@ -48,14 +48,14 @@ module.exports = function(grunt) {
             'bower_components/foundation/js/foundation.min.js',
             'js/app.js',
           ]
-        }
+        },
       }
     },
 
     copy: {
       dist: {
         files: [
-          { expand: true, flatten: true, src: ['bower_components/jquery/jquery.min.js'], dest: 'js/', filter: 'isFile'}
+          { expand: true, flatten: true, src: ['bower_components/jquery/jquery.min.js'], dest: 'js/', filter: 'isFile'},
         ]
       }
     }
