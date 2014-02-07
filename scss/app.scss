@@ -139,11 +139,13 @@ html {
 
 	}
 
-	li {
+	&>li {
 		margin-bottom: 2em;
 		padding-bottom: 2em;
 		border-bottom: thin solid #666;
 	}
+
+
 
 	li:last-child {
 		border-bottom: none;
@@ -151,6 +153,15 @@ html {
 
 	.description {
 		margin-top: 1em;
+
+		&>ul {
+		padding: 0 5em;
+		margin-bottom: 1.25rem;
+
+		li {
+			text-align: left;
+		}
+	}
 	}
 }
 
