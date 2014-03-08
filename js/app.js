@@ -5,8 +5,7 @@ $(document).ready(function() {
     var provinces = [];
 	$(".conferences > li").each(function() {
 	    var province = $(this).data("province");
-        console.log(province);
-	    if ($.inArray(province,provinces) < 0) provinces.push(province);
+        if ($.inArray(province,provinces) < 0) provinces.push(province);
 	});
 	provinces.sort();
 
